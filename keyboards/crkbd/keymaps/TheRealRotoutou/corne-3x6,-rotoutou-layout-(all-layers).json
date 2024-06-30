@@ -1,0 +1,367 @@
+[
+  {
+    "name": "Corne 3x6,  rotoutou layout (All Layers)",
+    "author": "https://github.com/TheRealRotoutou/qmk_firmware",
+    "notes": "rotoutou's layout for corne - crkbd/rev1 - keyboard.\nAzerty : use with french/fr locale",
+    "plate": false,
+    "keyboard-layout-editor": "http://www.keyboard-layout-editor.com/#/gists/adfa7c3cd8f0c6d3a7b9155c6eab1748#file-corne-crkbd_c0psrul3-default-json",
+    "qmk-config": "https://config.qmk.fm/#/crkbd/rev1/LAYOUT"
+  },
+  [
+    {
+      "x": 3,
+      "t": "#e0222d\n#00f\n#f07a24\n#117315\n\n\n\n\n\n#000000"
+    },
+    "\n_\n'\n'\n\n\n\n\n\nE",
+    {
+      "x": 2.25,
+      "t": "#000000",
+      "w": 2.5,
+      "h": 3,
+      "d": true
+    },
+    "<i>Combos</i><br>ZE for é<br>ER for è<br>YU for ù<br>AZ for à<br>XC for ç",
+    {
+      "x": 2.25,
+      "t": "#ff0000\n#0f0ff7\n#008000\n\n\n\n\n\n\n#000000"
+    },
+    "9\n!\n\n\n\n\n\n\n\nI",
+    {
+      "t": "#e81548\n#4646f0\n#008000\n\n\n\n\n\n\n#000000"
+    },
+    "/\n§\n(\n\n\n\n\n\n\nO"
+  ],
+  [
+    {
+      "y": -0.9,
+      "x": 2,
+      "t": "#d92546\n\n#f07a24\n#18a147\n\n\n\n\n\n#000000"
+    },
+    "\n\n\"\n`\n\n\n\n\n\nZ"
+  ],
+  [
+    {
+      "y": -1,
+      "x": 4,
+      "t": "#000000\n#1a1aeb\n#f07a24\n#0f913b\n\n\n\n\n\n#000000"
+    },
+    "\n+\n(\n^\n\n\n\n\n\nR",
+    {
+      "x": 5,
+      "t": "#ff0000\n#1818f2\n\n\n\n\n\n\n\n#000000"
+    },
+    "8\n=\n\n\n\n\n\n\n\nU"
+  ],
+  [
+    {
+      "y": -0.9,
+      "x": 5,
+      "t": "#000000\n#00f\n#f07a24\n#0e8f13\n\n\n\n\n\n#000000"
+    },
+    "\n\n)\n¨\n\n\n\n\n\nT",
+    {
+      "x": 3,
+      "t": "#ff0000\n#2020e8\n#008000\n\n\n\n\n\n\n#080707"
+    },
+    "7\n_\n\n\n\n\n\n\n\nY"
+  ],
+  [
+    {
+      "y": -0.9000000000000001,
+      "t": "#000000\n\n#f07a24"
+    },
+    "\n\n²\n\n\n\n\n\n\nTab",
+    {
+      "x": 13,
+      "t": "#f01313\n#513bd9\n\n\n\n\n\n\n\nblack"
+    },
+    "€\n@\n\n\n\n\n\n\n\nBksp"
+  ],
+  [
+    {
+      "y": -0.9999999999999999,
+      "x": 1,
+      "t": "#000000\n#00f\n#f07a24\n#1a7a0b\n\n\n\n\n\n#000000"
+    },
+    "\n\n;\n\n\n\n\n\n\nA",
+    {
+      "x": 11,
+      "t": "#ff0000\n#2b2bed\n#008000\n\n\n\n\n\n\n#000000",
+      "fa": [
+        4,
+        0
+      ]
+    },
+    "-\n~\n\n\n\n\n\n\n\nP"
+  ],
+  [
+    {
+      "y": -0.30000000000000004,
+      "x": 3,
+      "t": "#000000\n#0000ff\n#f07a24\n#0e990e\n\n\n\n\n\n#000000",
+      "fa": [
+        4,
+        1,
+        2,
+        1
+      ]
+    },
+    "\nCut\n>\nF4\n\n\n\n\n\nD",
+    {
+      "x": 7,
+      "t": "#f00a0a\n#0000FF\n#008000\n\n\n\n\n\n\n#000000",
+      "f": 3
+    },
+    "6\n▲\n\n\n\n\n\n\n\nK"
+  ],
+  [
+    {
+      "y": -0.8999999999999999,
+      "x": 2,
+      "t": "#d91444\n#0000FF\n#f07a24\n#34961b\n\n\n\n\n\n#000000"
+    },
+    "\n\n<\nF3\n\n\n\n\n\nS",
+    {
+      "x": 1,
+      "t": "#ff0000\n#0000ff\n#f07a24\n#0f960f\n\n\n\n\n\n#000000",
+      "fa": [
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    "NUM\nDel\n[\nF5\n\n\n\n\n\nF",
+    {
+      "x": 5,
+      "t": "#e04360\n\n#f07a24\n\n\n\n\n\n\n#000000",
+      "fa": [
+        0,
+        0,
+        1
+      ]
+    },
+    "5\n▼\nSIGN\n\n\n\n\n\n\nJ",
+    {
+      "x": 1,
+      "t": "#e32b4c\n#0000FF\n#008000\n\n\n\n\n\n\n#000000"
+    },
+    "*\n▶\n\n\n\n\n\n\n\nL"
+  ],
+  [
+    {
+      "y": -0.8999999999999999,
+      "x": 5,
+      "t": "#000000\n#0000FF\n#f07a24\n#0a8c0a",
+      "fa": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "\n\n]\nF6\n\n\n\n\n\nG",
+    {
+      "x": 3,
+      "t": "#c71a1a\n#0000FF"
+    },
+    "4\n◀\n\n\n\n\n\n\n\nH"
+  ],
+  [
+    {
+      "y": -0.9000000000000001,
+      "t": "#000000\n\n#f07a24\n#168c1b"
+    },
+    "\n\nµ\nF1\n\n\n\n\n\nShift",
+    {
+      "x": 13,
+      "t": "#e60b0b"
+    },
+    "$\n\n\n\n\n\n\n\n\nDel"
+  ],
+  [
+    {
+      "y": -0.9999999999999996,
+      "x": 1,
+      "t": "#000000\n#0000FF\n#f5890c\n#33b31e\n\n\n\n\n\n#000000"
+    },
+    "\n\n&\nF2\n\n\n\n\n\nQ",
+    {
+      "x": 11,
+      "t": "#e82352\n#1400ff\n#008000\n\n\n\n\n\n\n#000000",
+      "f2": 1
+    },
+    "+\nHome\n\n\n\n\n\n\n\nM"
+  ],
+  [
+    {
+      "y": -0.2999999999999998,
+      "x": 3,
+      "t": "#000000\n#0000FF\n#f07a24\n#089908",
+      "fa": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    "\nCopy\n/\nF10\n\n\n\n\n\nC",
+    {
+      "x": 7,
+      "t": "#f21349\n#0000FF\n\n\n\n\n\n\n\n#000000"
+    },
+    "3\nPgUp\n\n\n\n\n\n\n\n."
+  ],
+  [
+    {
+      "y": -0.8999999999999999,
+      "x": 2,
+      "t": "#000000\nblue\n#f07a24\n#088c08",
+      "fa": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "\n>\n\\\nF9\n\n\n\n\n\nX",
+    {
+      "x": 1,
+      "t": "#000000\n#0000FF\n#f07a24\n#059605",
+      "fa": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    "\nPaste\n{\nF11\n\n\n\n\n\nV",
+    {
+      "x": 5,
+      "t": "#e01414\n#0000FF\n\n\n\n\n\n\n\n#000000"
+    },
+    "2\nPgDn\n\n\n\n\n\n\n\n,",
+    {
+      "x": 1,
+      "t": "#de0d33\n#0000FF\n\n\n\n\n\n\n\n#000000"
+    },
+    "#\n\n\n\n\n\n\n\n\n:"
+  ],
+  [
+    {
+      "y": -0.8999999999999999,
+      "x": 5,
+      "t": "#000000\n#0000FF\n#f07a24\n#039103",
+      "fa": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "\n;\n}\nF12\n\n\n\n\n\nB",
+    {
+      "x": 3,
+      "t": "#f01313\n#0000FF\n#008000\n\n\n\n\n\n\n#000000"
+    },
+    "1\n\n\n\n\n\n\n\n\nN"
+  ],
+  [
+    {
+      "y": -0.9000000000000008,
+      "t": "#000000\n\n#f07a24\n#0aab0a"
+    },
+    "\n\n¤\nF7\n\n\n\n\n\nCtrl",
+    {
+      "x": 13,
+      "t": "#f00e0e\n\n\n\n\n\n\n\n\n#000000"
+    },
+    "°\n\n\n\n\n\n\n\n\nEsc"
+  ],
+  [
+    {
+      "y": -0.9999999999999991,
+      "x": 1,
+      "t": "#000000\nblue\n#f07a24\n#16a63e"
+    },
+    "\n<\n|\nF8\n\n\n\n\n\nZ",
+    {
+      "x": 11,
+      "t": "#ff0000\n#1515e8\n\n\n\n\n\n\n\n#000000",
+      "f2": 1
+    },
+    "%\nEnd\n\n\n\n\n\n\n\n?"
+  ],
+  [
+    {
+      "y": -0.20000000000000018,
+      "x": 3.5,
+      "t": "#000000",
+      "a": 7
+    },
+    "Alt",
+    {
+      "x": 6,
+      "t": "#ff0000\n\n\n\n\n\n\n\n\n#0c0d0c",
+      "a": 4,
+      "f": 3
+    },
+    ".\n\n\n\n\n\n\n\n\nAltGr"
+  ],
+  [
+    {
+      "y": 0.14999999999999947,
+      "t": "#000000",
+      "f": 3,
+      "w": 12,
+      "d": true
+    },
+    "\n<tt>https://github.com/TheRealRotoutou/qmk_firmware\n\n\n\n\nAzerty layout for corne - crkbd/rev1"
+  ],
+  [
+    {
+      "r": 15,
+      "rx": 4.5,
+      "ry": 4.1,
+      "y": -1,
+      "t": "#0000FF",
+      "a": 7
+    },
+    "Lower"
+  ],
+  [
+    {
+      "r": 30,
+      "rx": 5.4,
+      "ry": 4.3,
+      "y": -1.5,
+      "x": 0.09999999999999964,
+      "t": "#000000",
+      "a": 4,
+      "h": 1.5
+    },
+    "Space"
+  ],
+  [
+    {
+      "r": -30,
+      "rx": 9.6,
+      "y": -1.5,
+      "x": -1.0999999999999996,
+      "h": 1.5
+    },
+    "Enter"
+  ],
+  [
+    {
+      "r": -15,
+      "rx": 10.5,
+      "ry": 4.1,
+      "y": -1,
+      "x": -1,
+      "t": "#ff0000\n\n\n\n\n\n\n\n\n#1b964d",
+      "f": 3
+    },
+    "0\n\n\n\n\n\n\n\n\nRaise"
+  ]
+]
