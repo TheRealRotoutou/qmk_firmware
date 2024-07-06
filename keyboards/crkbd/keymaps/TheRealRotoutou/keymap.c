@@ -29,7 +29,7 @@ enum layers {
 
 const uint16_t PROGMEM FR_EGRV_combo[] = {FR_Z, FR_E, COMBO_END};
 const uint16_t PROGMEM FR_EACU_combo[] = {FR_E, FR_R, COMBO_END};
-const uint16_t PROGMEM FR_UGRV_combo[] = {FR_Y, FR_U, COMBO_END};
+const uint16_t PROGMEM FR_UGRV_combo[] = {FR_U, FR_I, COMBO_END};
 const uint16_t PROGMEM FR_AGRV_combo[] = {FR_A, FR_Z, COMBO_END};
 const uint16_t PROGMEM FR_CCED_combo[] = {FR_X, FR_C, COMBO_END};
 combo_t key_combos[] = {
@@ -59,11 +59,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------------------------.                          ,-----------------------------------------------------------------------.
          XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,                               FR_UNDS,     FR_EQL,    FR_EXLM,    FR_SECT,    FR_TILD,      FR_AT,
   //|-----------+-----------+-----------+-----------+-----------+-----------|                          |-----------+-----------+-----------+-----------+-----------+-----------|
-         XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX, LCTL(FR_X),     KC_DEL,                               KC_LEFT,    KC_DOWN,      KC_UP,    KC_RGHT,    KC_HOME,    XXXXXXX,
+         XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX, LCTL(FR_X),     KC_DEL,                               KC_LEFT,    KC_DOWN,      KC_UP,    KC_RGHT,    KC_HOME,     KC_INS,
   //|-----------+-----------+-----------+-----------+-----------+-----------|                          |-----------+-----------+-----------+-----------+-----------+-----------|
          XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX, LCTL(FR_C), LCTL(FR_V),                               XXXXXXX,    KC_PGDN,    KC_PGUP,    XXXXXXX,     KC_END,    XXXXXXX,
   //|-----------+-----------+-----------+-----------+-----------+-----------+-----------|  |-----------+-----------+-----------+-----------+-----------+-----------+-----------|
-                                                         _______,    _______,    _______,        _______,   _______,     _______
+                                                         _______,    _______,    _______,        _______,   _______,     KC_RWIN
                                                       //`-------------------------------'  `-----------------------------------'
   ),
 
@@ -76,7 +76,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|-----------+-----------+-----------+-----------+-----------+-----------|                          |-----------+-----------+-----------+-----------+-----------+-----------|
            KC_F7,      KC_F8,      KC_F9,     KC_F10,     KC_F11,     KC_F12,                               XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
   //|-----------+-----------+-----------+-----------+-----------+-----------+-----------|  |-----------+-----------+-----------+-----------+-----------+-----------+-----------|
-                                                         _______,    _______,    _______,       _______,    _______,     _______
+                                                         KC_LWIN,    _______,    _______,       _______,    _______,     _______
                                                       //`-------------------------------'  `-----------------------------------'
   ),
 
