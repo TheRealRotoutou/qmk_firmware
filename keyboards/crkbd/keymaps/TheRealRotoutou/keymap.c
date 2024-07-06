@@ -27,18 +27,61 @@ enum layers {
   _SIGNS
 };
 
+// Macros for circumflex
+enum custom_keycodes {
+    FR_ECIR = SAFE_RANGE,
+    FR_UCIR,
+};
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+    case FR_ECIR:
+        if (record->event.pressed) {
+            register_code16(FR_CIRC);
+            register_code16(FR_E);
+        } else {
+            unregister_code16(FR_CIRC);
+            unregister_code16(FR_E);
+        }
+        return false;
+
+    case FR_UCIR:
+        if (record->event.pressed) {
+            register_code16(FR_CIRC);
+            register_code16(FR_U);
+        } else {
+            unregister_code16(FR_CIRC);
+            unregister_code16(FR_U);
+        }
+        return false;
+
+    default:
+        return true;
+    }
+}
+
+// Combos for french accents
 const uint16_t PROGMEM FR_EGRV_combo[] = {FR_Z, FR_E, COMBO_END};
 const uint16_t PROGMEM FR_EACU_combo[] = {FR_E, FR_R, COMBO_END};
+const uint16_t PROGMEM FR_ECIR_combo[] = {FR_E, FR_T, COMBO_END};
 const uint16_t PROGMEM FR_UGRV_combo[] = {FR_U, FR_I, COMBO_END};
+const uint16_t PROGMEM FR_UCIR_combo[] = {FR_U, FR_O, COMBO_END};
 const uint16_t PROGMEM FR_AGRV_combo[] = {FR_A, FR_Z, COMBO_END};
 const uint16_t PROGMEM FR_CCED_combo[] = {FR_X, FR_C, COMBO_END};
 combo_t key_combos[] = {
     COMBO(FR_EGRV_combo, FR_EGRV),
     COMBO(FR_EACU_combo, FR_EACU),
+    COMBO(FR_ECIR_combo, FR_ECIR),
     COMBO(FR_UGRV_combo, FR_UGRV),
+    COMBO(FR_UCIR_combo, FR_UCIR),
     COMBO(FR_AGRV_combo, FR_AGRV),
     COMBO(FR_CCED_combo, FR_CCED)
 };
+
+// cut/copy/paste that works both on linux and windows.
+#define LWCOPY LCTL(KC_INS)    // Ctrl+Ins
+#define LWCUT LSFT(KC_DEL)     // Maj+Suppr
+#define LWPASTE LSFT(KC_INS)   // Maj+Ins 
 
 // Base layer - Middle of the key - black
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -59,9 +102,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------------------------.                          ,-----------------------------------------------------------------------.
          XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,                               FR_UNDS,     FR_EQL,    FR_EXLM,    FR_SECT,    FR_TILD,      FR_AT,
   //|-----------+-----------+-----------+-----------+-----------+-----------|                          |-----------+-----------+-----------+-----------+-----------+-----------|
-         XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX, LCTL(FR_X),     KC_DEL,                               KC_LEFT,    KC_DOWN,      KC_UP,    KC_RGHT,    KC_HOME,     KC_INS,
+         XXXXXXX,    XXXXXXX,    XXXXXXX,      LWCUT,     KC_DEL,    XXXXXXX,                               KC_LEFT,    KC_DOWN,      KC_UP,    KC_RGHT,    KC_HOME,     KC_INS,
   //|-----------+-----------+-----------+-----------+-----------+-----------|                          |-----------+-----------+-----------+-----------+-----------+-----------|
-         XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX, LCTL(FR_C), LCTL(FR_V),                               XXXXXXX,    KC_PGDN,    KC_PGUP,    XXXXXXX,     KC_END,    XXXXXXX,
+         XXXXXXX,    XXXXXXX,    XXXXXXX,     LWCOPY,    LWPASTE,    XXXXXXX,                               XXXXXXX,    KC_PGDN,    KC_PGUP,    XXXXXXX,     KC_END,    XXXXXXX,
   //|-----------+-----------+-----------+-----------+-----------+-----------+-----------|  |-----------+-----------+-----------+-----------+-----------+-----------+-----------|
                                                          _______,    _______,    _______,        _______,   _______,     KC_RWIN
                                                       //`-------------------------------'  `-----------------------------------'
