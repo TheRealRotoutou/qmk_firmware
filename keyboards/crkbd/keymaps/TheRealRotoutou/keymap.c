@@ -31,6 +31,7 @@ enum layers {
 enum custom_keycodes {
     FR_ECIR = SAFE_RANGE,
     FR_UCIR,
+    FR_ACIR,
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
@@ -55,18 +56,29 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         }
         return false;
 
+    case FR_ACIR:
+        if (record->event.pressed) {
+            register_code16(FR_CIRC);
+            register_code16(FR_A);
+        } else {
+            unregister_code16(FR_CIRC);
+            unregister_code16(FR_A);
+        }
+        return false;
+
     default:
         return true;
     }
 }
 
 // Combos for french accents
-const uint16_t PROGMEM FR_EGRV_combo[] = {FR_Z, FR_E, COMBO_END};
-const uint16_t PROGMEM FR_EACU_combo[] = {FR_E, FR_R, COMBO_END};
+const uint16_t PROGMEM FR_EACU_combo[] = {FR_Z, FR_E, COMBO_END};
+const uint16_t PROGMEM FR_EGRV_combo[] = {FR_E, FR_R, COMBO_END};
 const uint16_t PROGMEM FR_ECIR_combo[] = {FR_E, FR_T, COMBO_END};
 const uint16_t PROGMEM FR_UGRV_combo[] = {FR_U, FR_I, COMBO_END};
 const uint16_t PROGMEM FR_UCIR_combo[] = {FR_U, FR_O, COMBO_END};
 const uint16_t PROGMEM FR_AGRV_combo[] = {FR_A, FR_Z, COMBO_END};
+const uint16_t PROGMEM FR_ACIR_combo[] = {FR_A, FR_E, COMBO_END};
 const uint16_t PROGMEM FR_CCED_combo[] = {FR_X, FR_C, COMBO_END};
 combo_t key_combos[] = {
     COMBO(FR_EGRV_combo, FR_EGRV),
@@ -75,6 +87,7 @@ combo_t key_combos[] = {
     COMBO(FR_UGRV_combo, FR_UGRV),
     COMBO(FR_UCIR_combo, FR_UCIR),
     COMBO(FR_AGRV_combo, FR_AGRV),
+    COMBO(FR_ACIR_combo, FR_ACIR),
     COMBO(FR_CCED_combo, FR_CCED)
 };
 
